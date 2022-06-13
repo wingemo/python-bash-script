@@ -1,5 +1,5 @@
-from datetime import datetime
 import pytz
+from datetime import datetime
 
 tz_NY = pytz.timezone('America/New_York') 
 datetime_NY = datetime.now(tz_NY)
@@ -14,3 +14,4 @@ datetime_London = datetime.now(tz_London)
 time_stockholm = "Stockholm time:", datetime_London.strftime("%H:%M:%S")
 
 print(time_new_york + time_london + time_stockholm)
+
